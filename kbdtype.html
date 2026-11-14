@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 30.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #5b5b60; -webkit-text-stroke: #5b5b60; min-height: 18.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618; min-height: 22.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #094ec0; -webkit-text-stroke: #094ec0}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.s3 {font: 18.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: #094ec0; -webkit-text-stroke: 0px #094ec0}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">How To Fix Keyboard Type Problems</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">Macs normally have one of three different physical keyboard "types," which Apple calls JIS (for Japan), ISO (used in Europe, the Middle East, and Africa) and ANSI (used in the US, Latin America, and Asia). </span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">ISO has one key more than ANSI -- located at the left end of the bottom row -- and a vertical (instead of horizontal) Enter key.  JIS has quite a few differences from either of those.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">Sometimes a machine will forget which type keyboard is attached, with the result that certain keys get transposed from what the user expects. Most commonly this affects the key just below ESC and the key to the right of Left Shift.<span class="Apple-converted-space">  </span>Where JIS is involved, it mainly affects keys at the right edge of the keyboard.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">A. Apple's instructions for fixing this are at</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2"><a href="https://support.apple.com/guide/mac-help/specify-a-keyboard-type-mchlp2886/15.0/mac/15.0">Specify a keyboard type on Mac - Apple Support</a></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">B.<span class="Apple-converted-space">  </span>Sometimes the Keyboard Setup Assistant does not appear or do what is necessary.  In that case, you can try the following (at least in Sonoma and earlier):</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">Manually trash this file:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">/Library/Preferences/com.apple.keyboardtype.plist </span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">(Note that this is in the Library folder, not System/Library and not Users/username/Library)</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">This can also be done by opening Terminal and typing (or pasting from here):</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">sudo rm /Library/Preferences/com.apple.keyboardtype.plist</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">Run the Setup Assistant:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">System Settings &gt; Keyboard &gt; Change Keyboardtype</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">This can also be done from Terminal </span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">sudo open /System/Library/CoreServices/KeyboardSetupAssistant.app/Contents/MacOS/KeyboardSetupAssistant</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">It normally then tells you to click on the key to the right of Left Shift.  If that does not work, go through the process again and try clicking on the key under ESC instead, or the first key beyond the key to the right of Left Shift.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">Choose the type -- ISO, ANSI, or JIS -- which fits your physical keyboard</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">C. If nothing above fixes your problem, especially in Sequoia and later:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">Download <a href="https://karabiner-elements.pqrs.org/"><span class="s3">Karabiner Elements</span></a>, which has the ability to switch keyboard types (try choosing ANSI if your keyboard is ISO and vice versa) and can also switch the two keys at the left corners of the keyboard which are not working correctly.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">D. The <a href="https://software.sil.org/ukelele/"><span class="s3">Ukelele</span></a> app will also let you create a custom layout where you switch those keys.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">E. If you happen to be using a KVM, see <a href="https://discussions.apple.com/thread/256067908?sortBy=oldest_first"><span class="s3">this post.</span></a></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">F. If you have a US ANSI keyboard which is mistakenly being recognized as JIS/Japanese, you may still be able to type English as normal by using the Australian Input Source.<span class="Apple-converted-space">  </span>See</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p5"><span class="s2"><a href="https://discussions.apple.com/docs/DOC-250008782">Typing English on a Japanese Hardware Key… - Apple Community</a></span></p>
+<p class="p3"><span class="s1"></span><br></p>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 30.0px 'Helvetica Neue'; color: #262626; -webkit-text-stroke: #262626}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #5b5b60; -webkit-text-stroke: #5b5b60; min-height: 18.0px}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618; min-height: 22.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #161618; -webkit-text-stroke: #161618}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 18.0px 'Helvetica Neue'; text-decoration: underline ; font-kerning: none; color: #094ec0; -webkit-text-stroke: 0px #094ec0}
+    ol.ol1 {list-style-type: decimal}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">MacOS Accent Menu Has Disappeared</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">If the <a href="https://support.apple.com/guide/mac-help/enter-characters-with-accent-marks-on-mac-mh27474/13.0/mac/13.0"><span class="s2">Accent Menu</span></a> used to type accented characters via pressing and holding a letter key suddenly no longer appears, here are some ways to possibly bring it back:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">+Go to System Preferences/Settings &gt; Keyboard and make sure that Key Repeat is NOT set to Off and that  Delay Until Repeat is not set too long.  Try setting Key Repeat to OFF and then back to wherever it was before.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">+Check that you are not using the input source called Unicode Hex (U+).<span class="Apple-converted-space">  </span>It does not have accent menus in some versions of MacOS.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">+Make sure you do not have Webroot antivirus installed on your machine.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">+Open the Terminal App in Applications/Utilities and type:</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">defaults write -g ApplePressAndHoldEnabled -bool true</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">and then press return and restart.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">(Note that some users have reported needing to repeat this a few times)</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">For webroot that you can’t remove, try</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<ol class="ol1">
+  <li class="li4"><span class="s1">Click the Webroot SecureAnywhere icon in the menu bar.</span></li>
+  <li class="li4"><span class="s1">Choose Pause Secure Keyboard Entry.</span></li>
+</ol>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">If none of these help, check for apps actively requiring password input, as described <a href="https://discussions.apple.com/thread/255930054?answerId=261099440022&amp;sortBy=rank"><span class="s2">here</span></a>.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">If you need an alternative way to make accents immediately, you can use option key shortcuts, a list of which is <a href="https://sites.psu.edu/symbolcodes/mac/codemac/"><span class="s2">here</span></a>.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">If you want to use long press to repeat letter keys, or need repeating letter keys to move the cursor in certain Terminal apps,<span class="Apple-converted-space">  </span>you can use the terminal command mentioned above, changing the "true" to "false". <span class="Apple-converted-space">  </span>If you find the repeat speed too slow, <a href="https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x/83923#83923"><span class="s2">see this article</span></a> for a possible fix.</span></p>
+<p class="p3"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">Note:<span class="Apple-converted-space">  </span>The Accent Menu feature was added in OS X 10.7 Lion in 2011<span class="Apple-converted-space">  </span>and has been the default behavior for MacOS ever since.<span class="Apple-converted-space">  </span>Even with the Accent Menu active, various symbol keys should still repeat on long press, such as !@#$%^&amp;*()_+{}|:"&lt;&gt;?-=[];'.,/</span></p>
+</body>
+</html>
